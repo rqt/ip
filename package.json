@@ -1,6 +1,6 @@
 {
   "name": "@rqt/ip",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Returns a public IP address of the host.",
   "main": "build",
   "scripts": {
