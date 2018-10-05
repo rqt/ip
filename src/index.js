@@ -1,26 +1,9 @@
-import { debuglog } from 'util'
-
-const LOG = debuglog('@rqt/ip')
+import rqt from 'rqt'
 
 /**
  * Returns a public IP address of the host.
- * @param {Config} [config] Options for the program.
- * @param {boolean} [config.shouldRun=true] A boolean option. Default `true`.
- * @param {string} config.text A text to return.
  */
-export default async function ip(config = {}) {
-  const {
-    shouldRun = true,
-    text,
-  } = config
-  if (!shouldRun) return
-  LOG('@rqt/ip called with %s', text)
-  return text
+export default async function ip() {
+  const res = await rqt('https://api.ipify.org')
+  return res
 }
-
-/* documentary types/index.xml */
-/**
- * @typedef {Object} Config Options for the program.
- * @prop {boolean} [shouldRun=true] A boolean option. Default `true`.
- * @prop {string} text A text to return.
- */
