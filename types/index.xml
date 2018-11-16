@@ -1,10 +1,7 @@
 <types>
-  <type name="Config" desc="Options for the program.">
-    <prop boolean name="shouldRun" default="true">
-      A boolean option.
-    </prop>
-    <prop string name="text">
-      A text to return.
+  <type name="Options" desc="Options for the request.">
+    <prop string name="host" default="https://api.ipify.org">
+      The address from which to get the IP address.
     </prop>
   </type>
 </types>

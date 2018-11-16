@@ -1,6 +1,6 @@
-// returns the correct output
-test
+// returns the IP address
+10.10.10.10
 
 /* expected */
-test
+10.10.10.10
 /**/
