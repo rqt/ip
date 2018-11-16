@@ -10,12 +10,11 @@ import ip from '@rqt/ip'
 
 ```## ip
 [
-  ["arg1", "string"],
-  ["arg2?", "boolean"]
+  ["options?", "Options"]
 ]
 ```
 
-Call this function to get the result you want.
+Returns the IP address as seen by an external web-server.
 
 %TYPEDEF types/index.xml%
 

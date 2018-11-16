@@ -1,6 +1,6 @@
 # @rqt/ip
 
-[![npm version](https://badge.fury.io/js/@rqt/ip.svg)](https://npmjs.org/package/@rqt/ip)
+[![npm version](https://badge.fury.io/js/%40rqt%2Fip.svg)](https://npmjs.org/package/@rqt/ip)
 
 `@rqt/ip` is Returns a public IP address of the host.
 
@@ -12,8 +12,8 @@ yarn add -E @rqt/ip
 
 - [Table Of Contents](#table-of-contents)
 - [API](#api)
-- [`ip(arg1: string, arg2?: boolean)`](#mynewpackagearg1-stringarg2-boolean-void)
-  * [`Config`](#type-config)
+- [`ip(options?: Options)`](#ipoptions-options-void)
+  * [`Options`](#type-options)
 - [Copyright](#copyright)
 
 <p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/0.svg?sanitize=true"></a></p>
@@ -28,30 +28,24 @@ import ip from '@rqt/ip'
 
 <p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/1.svg?sanitize=true"></a></p>
 
-## `ip(`<br/>&nbsp;&nbsp;`arg1: string,`<br/>&nbsp;&nbsp;`arg2?: boolean,`<br/>`): void`
+## `ip(`<br/>&nbsp;&nbsp;`options?: Options,`<br/>`): void`
 
-Call this function to get the result you want.
+Returns the IP address as seen by an external web-server.
 
-__<a name="type-config">`Config`</a>__: Options for the program.
+__<a name="type-options">`Options`</a>__: Options for the request.
 
-|   Name    |   Type    |    Description    | Default |
-| --------- | --------- | ----------------- | ------- |
-| shouldRun | _boolean_ | A boolean option. | `true`  |
-| __text*__ | _string_  | A text to return. | -       |
+| Name |   Type   |                  Description                  |         Default         |
+| ---- | -------- | --------------------------------------------- | ----------------------- |
+| host | _string_ | The address from which to get the IP address. | `https://api.ipify.org` |
 
 ```js
-/* yarn example/ */
-import ip from '@rqt/ip'
-
-(async () => {
-  const res = await ip({
-    text: 'example',
-  })
-  console.log(res)
-})()
+const GetIp = async (host) => {
+  const res = await ip({ host })
+  return res
+}
 ```
 ```
-example
+127.0.0.1
 ```
 
 <p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/2.svg?sanitize=true"></a></p>
