@@ -8,6 +8,8 @@
 yarn add -E @rqt/ip
 ```
 
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/0.svg?sanitize=true"></a></p>
+
 ## Table Of Contents
 
 - [Table Of Contents](#table-of-contents)
@@ -16,7 +18,7 @@ yarn add -E @rqt/ip
   * [`Options`](#type-options)
 - [Copyright](#copyright)
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/0.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/1.svg?sanitize=true"></a></p>
 
 ## API
 
@@ -26,7 +28,7 @@ The package is available by importing its default function:
 import ip from '@rqt/ip'
 ```
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/1.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/2.svg?sanitize=true"></a></p>
 
 ## `ip(`<br/>&nbsp;&nbsp;`options?: Options,`<br/>`): void`
 
@@ -48,7 +50,7 @@ const GetIp = async (host) => {
 127.0.0.1
 ```
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/2.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/3.svg?sanitize=true"></a></p>
 
 ## Copyright
 
