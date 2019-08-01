@@ -2,10 +2,10 @@
 
 %NPM: @rqt/ip%
 
-`@rqt/ip` is Returns a public IP address of the host.
+`@rqt/ip` Returns a public IP address of the host.
 
 ```sh
-yarn add -E @rqt/ip
+yarn add @rqt/ip
 ```
 
 %~%

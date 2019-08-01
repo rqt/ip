@@ -16,9 +16,9 @@ import ip from '@rqt/ip'
 
 Returns the IP address as seen by an external web-server.
 
-%TYPEDEF types/index.xml%
+<typedef>types/index.xml</typedef>
 
-%EXAMPLE: example/example.js, ../src => @rqt/ip%
-%FORK example example/example%
+%EXAMPLE: example, ../src => @rqt/ip%
+%FORK example%
 
 %~%

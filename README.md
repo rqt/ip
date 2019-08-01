@@ -2,10 +2,10 @@
 
 [![npm version](https://badge.fury.io/js/%40rqt%2Fip.svg)](https://npmjs.org/package/@rqt/ip)
 
-`@rqt/ip` is Returns a public IP address of the host.
+`@rqt/ip` Returns a public IP address of the host.
 
 ```sh
-yarn add -E @rqt/ip
+yarn add @rqt/ip
 ```
 
 <p align="center"><a href="#table-of-contents">
@@ -42,6 +42,7 @@ Returns the IP address as seen by an external web-server.
 
 <strong><a name="type-_rqtipoptions">`_rqt.IpOptions`</a></strong>: Options for the request.
 
+
 | Name |      Type       |                  Description                  |         Default         |
 | ---- | --------------- | --------------------------------------------- | ----------------------- |
 | host | <em>string</em> | The address from which to get the IP address. | `https://api.ipify.org` |
@@ -62,9 +63,24 @@ const GetIp = async (host) => {
 
 ## Copyright
 
-(c) [Rqt][1] 2018
-
-[1]: https://rqt.biz
+<table>
+  <tr>
+    <th>
+      <a href="https://artd.eco">
+        <img width="100" src="https://raw.githubusercontent.com/wrote/wrote/master/images/artdeco.png"
+          alt="Art Deco">
+      </a>
+    </th>
+    <th>© <a href="https://artd.eco">Art Deco</a> for <a>Rqt</a> 2019</th>
+    <th>
+      <a href="https://www.technation.sucks" title="Tech Nation Visa">
+        <img width="100" src="https://raw.githubusercontent.com/idiocc/cookies/master/wiki/arch4.jpg"
+          alt="Tech Nation Visa">
+      </a>
+    </th>
+    <th><a href="https://www.technation.sucks">Tech Nation Visa Sucks</a></th>
+  </tr>
+</table>
 
 <p align="center"><a href="#table-of-contents">
   <img src="/.documentary/section-breaks/-1.svg?sanitize=true">
