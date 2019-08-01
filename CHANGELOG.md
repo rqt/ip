@@ -1,3 +1,9 @@
+## 1 August 2019
+
+### [1.2.0](https://github.com/rqt/ip/compare/v1.1.0...v1.2.0)
+
+- [package] Compile with [_Depack_](https://compiler.page).
+
 ## 16 November 2018
 
 ### 1.1.0
