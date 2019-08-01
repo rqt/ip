@@ -1,4 +1,4 @@
-import { equal, ok } from 'zoroaster/assert'
+import { equal, ok } from '@zoroaster/assert'
 import Context from '../context'
 import ip from '../../src'
 
@@ -11,12 +11,12 @@ const T = {
   async 'calls package without error'() {
     await ip()
   },
-  async 'gets a link to the fixture'({ FIXTURE }) {
-    const res = await ip({
-      text: FIXTURE,
-    })
-    ok(res, FIXTURE)
-  },
+  // async 'gets a link to the fixture'({ FIXTURE }) {
+  //   const res = await ip({
+  //     text: FIXTURE,
+  //   })
+  //   ok(res, FIXTURE)
+  // },
 }
 
 export default T

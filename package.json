@@ -2,7 +2,8 @@
   "name": "@rqt/ip",
   "version": "1.1.0",
   "description": "Returns a public IP address of the host.",
-  "main": "build",
+  "main": "compile/index.js",
+  "module": "src/index.js",
   "scripts": {
     "t": "zoroaster -a",
     "test": "yarn t test/spec test/mask",
@@ -11,17 +12,22 @@
     "test-build": "ALAMODE_ENV=test-build yarn test",
     "lint": "eslint .",
     "doc": "NODE_DEBUG=doc doc documentary -o README.md",
+    "compile": "NODE_DEBUG=doc doc documentary -o README.md",
     "b": "alamode src -o build -s",
-    "d": "yarn-s d1",
-    "d1": "NODE_DEBUG=doc doc src/index.js -g",
+    "d": "yarn-s d1 externs",
+    "d1": "typal types/index.js",
+    "externs": "typal types/externs.js",
     "build": "yarn-s d b doc",
     "rec": "NODE_DEBUG=appshot appshot -T 23 -a Terminal -y 150 -f",
     "e": "node example",
     "example/": "yarn e example/example.js"
   },
   "files": [
-    "build"
+    "src",
+    "compile",
+    "types/externs.js"
   ],
+  "externs": "types/externs.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/rqt/ip.git"
@@ -37,14 +43,15 @@
   },
   "homepage": "https://github.com/rqt/ip#readme",
   "devDependencies": {
-    "alamode": "1.6.0",
-    "documentary": "1.20.1",
+    "alamode": "2.3.6",
+    "documentary": "1.29.0",
     "eslint-config-artdeco": "1.0.1",
     "https-context": "1.0.3",
     "yarn-s": "1.1.0",
-    "zoroaster": "3.6.6"
+    "typal": "^1.19.0",
+    "zoroaster": "4.1.1-alpha"
   },
-  "dependencies": {
-    "rqt": "3.0.1"
+  "srcDependencies": {
+    "rqt": "4.0.0"
   }
 }

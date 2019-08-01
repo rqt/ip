@@ -1,14 +1,13 @@
-import { makeTestSuite } from 'zoroaster'
+import makeTestSuite from '@zoroaster/mask'
 import { HTTPContext } from 'https-context'
 import ip from '../../src'
 
 const ts = makeTestSuite('test/result', {
   /**
-   * @param {string} _
    * @param {HTTPContext} context
    */
-  async getResults(input, { setResponse, url: host }) {
-    setResponse(input)
+  async getResults({ setResponse, url: host }) {
+    setResponse(this.input)
     const res = await ip({
       host,
     })

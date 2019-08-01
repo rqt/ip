@@ -2,8 +2,7 @@ import rqt from 'rqt'
 
 /**
  * Returns a public IP address of the host.
- * @param {Options} options Options for the request.
- * @param {string} [options.host="https://api.ipify.org"] The address from which to get the IP address. Default `https://api.ipify.org`.
+ * @param {!_rqt.IpOptions} options Options for the request.
  */
 export default async function ip(options = {}) {
   const {
@@ -13,8 +12,7 @@ export default async function ip(options = {}) {
   return res
 }
 
-/* documentary types/index.xml */
 /**
- * @typedef {Object} Options Options for the request.
- * @prop {string} [host="https://api.ipify.org"] The address from which to get the IP address. Default `https://api.ipify.org`.
+ * @suppress {nonStandardJsDocs}
+ * @typedef {import('../types').IpOptions} _rqt.IpOptions
  */

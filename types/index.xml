@@ -1,5 +1,5 @@
-<types>
-  <type name="Options" desc="Options for the request.">
+<types namespace="_rqt">
+  <type record name="IpOptions" desc="Options for the request.">
     <prop string name="host" default="https://api.ipify.org">
       The address from which to get the IP address.
     </prop>
