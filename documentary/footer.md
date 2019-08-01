@@ -4,6 +4,6 @@
 
 ## Copyright
 
-<footer client="Rqt" clientUrl="https://rqt.biz"/>
+<footer client="Rqt" clientLink="https://rqt.biz"/>
 
 %~ -1%

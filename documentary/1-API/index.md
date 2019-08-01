@@ -8,7 +8,7 @@ import ip from '@rqt/ip'
 
 %~%
 
-```## ip
+```## async ip => string
 [
   ["options?", "Options"]
 ]
@@ -16,7 +16,7 @@ import ip from '@rqt/ip'
 
 Returns the IP address as seen by an external web-server.
 
-<typedef>types/index.xml</typedef>
+<typedef narrow>types/index.xml</typedef>
 
 %EXAMPLE: example, ../src => @rqt/ip%
 %FORK example%

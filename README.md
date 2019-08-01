@@ -16,7 +16,7 @@ yarn add @rqt/ip
 
 - [Table Of Contents](#table-of-contents)
 - [API](#api)
-- [`ip(options?: Options)`](#ipoptions-options-void)
+- [`async ip(options?: Options): string`](#async-ipoptions-options-string)
   * [`_rqt.IpOptions`](#type-_rqtipoptions)
 - [Copyright](#copyright)
 
@@ -36,16 +36,27 @@ import ip from '@rqt/ip'
   <img src="/.documentary/section-breaks/2.svg?sanitize=true">
 </a></p>
 
-## `ip(`<br/>&nbsp;&nbsp;`options?: Options,`<br/>`): void`
+## `async ip(`<br/>&nbsp;&nbsp;`options?: Options,`<br/>`): string`
 
 Returns the IP address as seen by an external web-server.
 
 <strong><a name="type-_rqtipoptions">`_rqt.IpOptions`</a></strong>: Options for the request.
-
-
-| Name |      Type       |                  Description                  |         Default         |
-| ---- | --------------- | --------------------------------------------- | ----------------------- |
-| host | <em>string</em> | The address from which to get the IP address. | `https://api.ipify.org` |
+<table>
+ <thead><tr>
+  <th>Name</th>
+  <th>Type &amp; Description</th>
+  <th>Default</th>
+ </tr></thead>
+ <tr>
+  <td rowSpan="3" align="center">host</td>
+  <td><em>string</em></td>
+  <td rowSpan="3"><code>https://api.ipify.org</code></td>
+ </tr>
+ <tr></tr>
+ <tr>
+  <td>The address from which to get the IP address.</td>
+ </tr>
+</table>
 
 ```js
 const GetIp = async (host) => {
@@ -71,7 +82,7 @@ const GetIp = async (host) => {
           alt="Art Deco">
       </a>
     </th>
-    <th>© <a href="https://artd.eco">Art Deco</a> for <a>Rqt</a> 2019</th>
+    <th>© <a href="https://artd.eco">Art Deco</a> for <a href="https://rqt.biz">Rqt</a> 2019</th>
     <th>
       <a href="https://www.technation.sucks" title="Tech Nation Visa">
         <img width="100" src="https://raw.githubusercontent.com/idiocc/cookies/master/wiki/arch4.jpg"
