@@ -1,6 +1,6 @@
 {
   "name": "@rqt/ip",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Returns a public IP address of the host.",
   "main": "compile/index.js",
   "module": "src/index.js",
