@@ -8,17 +8,21 @@
 yarn add -E @rqt/ip
 ```
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/0.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents">
+  <img src="/.documentary/section-breaks/0.svg?sanitize=true">
+</a></p>
 
 ## Table Of Contents
 
 - [Table Of Contents](#table-of-contents)
 - [API](#api)
 - [`ip(options?: Options)`](#ipoptions-options-void)
-  * [`Options`](#type-options)
+  * [`_rqt.IpOptions`](#type-_rqtipoptions)
 - [Copyright](#copyright)
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/1.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents">
+  <img src="/.documentary/section-breaks/1.svg?sanitize=true">
+</a></p>
 
 ## API
 
@@ -28,17 +32,19 @@ The package is available by importing its default function:
 import ip from '@rqt/ip'
 ```
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/2.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents">
+  <img src="/.documentary/section-breaks/2.svg?sanitize=true">
+</a></p>
 
 ## `ip(`<br/>&nbsp;&nbsp;`options?: Options,`<br/>`): void`
 
 Returns the IP address as seen by an external web-server.
 
-__<a name="type-options">`Options`</a>__: Options for the request.
+<strong><a name="type-_rqtipoptions">`_rqt.IpOptions`</a></strong>: Options for the request.
 
-| Name |   Type   |                  Description                  |         Default         |
-| ---- | -------- | --------------------------------------------- | ----------------------- |
-| host | _string_ | The address from which to get the IP address. | `https://api.ipify.org` |
+| Name |      Type       |                  Description                  |         Default         |
+| ---- | --------------- | --------------------------------------------- | ----------------------- |
+| host | <em>string</em> | The address from which to get the IP address. | `https://api.ipify.org` |
 
 ```js
 const GetIp = async (host) => {
@@ -50,7 +56,9 @@ const GetIp = async (host) => {
 127.0.0.1
 ```
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/3.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents">
+  <img src="/.documentary/section-breaks/3.svg?sanitize=true">
+</a></p>
 
 ## Copyright
 
@@ -58,4 +66,6 @@ const GetIp = async (host) => {
 
 [1]: https://rqt.biz
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/-1.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents">
+  <img src="/.documentary/section-breaks/-1.svg?sanitize=true">
+</a></p>
