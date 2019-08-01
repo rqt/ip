@@ -1,5 +1,9 @@
 ## 1 August 2019
 
+### [1.2.2](https://github.com/rqt/ip/compare/v1.2.1...v1.2.2)
+
+- [fix] Remove `testing compile` _console.log_.
+
 ### [1.2.1](https://github.com/rqt/ip/compare/v1.2.0...v1.2.1)
 
 - [package] Fix documentation.
